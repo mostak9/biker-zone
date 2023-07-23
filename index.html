@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind and daisyUI cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -14,7 +15,8 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
-                        'bike-bg': 'rgba(231, 111, 81, 0.10)'
+                        'bike-bg': 'rgba(231, 111, 81, 0.10)',
+                        'common-color': '#E76F51',
                     }
                 }
             }
@@ -139,7 +141,19 @@
             </div>
         </div>
     </header>
-    <main></main>
+    <main>
+        <!-- featured bike section -->
+        <section class="container max-w-7xl mx-auto my-28">
+            <h1 class="text-5xl text-center font-semibold">Fetured Bikes In This Year</h1>
+            <p class="text-common-color text-sm font-semibold text-center my-2">Best bike collection</p>
+            <hr class="w-[58px] mx-auto border-solid border-common-color">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 md:gap-16 lg:gap-28  mt-11 px-3 md:x-24">
+                <div> <img class="mx-auto" src="./images/others/feature-bike.png" alt=""></div>
+                <div><img class="mx-auto" src="./images/others/feature-bike.png" alt=""></div>
+                <div><img class="mx-auto" src="./images/others/feature-bike.png" alt=""></div>
+            </div>
+        </section>
+    </main>
     <footer></footer>
 </body>
 
